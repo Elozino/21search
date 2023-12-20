@@ -1,18 +1,15 @@
 import { motion } from "framer-motion"
 import { animateCircleImg, appLogo, groupImg, groupPicsImg } from "../assets/images"
+import { useMediaQuery } from 'react-responsive';
 
 const variants = {
   open: { opacity: 0, scale: .5 },
   closed: { opacity: 1, scale: 1 },
 }
+
 const variants1 = {
   open: { opacity: 1, scale: 1 },
   closed: { opacity: 0, scale: 0 },
-}
-
-const headerTextVariant = {
-  open: { x: 0 },
-  closed: { x: "38%", y: "-25%" }
 }
 
 const ellipseVariant = {
@@ -29,7 +26,13 @@ const Header = ({
 }) => {
   const headerText = isIndividual ? "Secure & seamless online transactions" : `Manage payroll, compliance & HR in real time`
   const headerSubText = isIndividual ? "Providing you with the best online payment experience" : "Make income tax remittances to the state internal revenue service for your employees."
+  const isDesktop = useMediaQuery({ minWidth: 768 });
 
+
+  const headerTextVariant = {
+    open: { x: 0 },
+    closed: isDesktop ? { x: '38%', y: '-25%' } : { x: "0%", y: 0 },
+  }
 
   return (
     <div className="overflow-hidden">
