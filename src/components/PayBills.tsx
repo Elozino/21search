@@ -55,7 +55,7 @@ const PayBills = () => {
         animate={activeIndex % 2 ? "even" : "odd"}
         variants={variant}
         transition={{ duration: 1 }}
-        className="mt-10 md:mt-0 flex justify-center items-center h-[450px] md:h-[711px] overflow-hidden w-full md:min-w-[50%]">
+        className="mt-10 md:mt-0 flex justify-center items-center h-[450px] md:h-[711px] overflow-hidden w-full md:w-[50%]">
         <motion.img
           animate={activeIndex % 2 ? "even" : "odd"}
           variants={imgVariant}
