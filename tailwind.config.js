@@ -66,7 +66,7 @@ export default {
       const newUtilities = {
         ".bg-funds-gradient": {
           backgroundImage:
-            'url("./src/assets/images/image-38.png"), linear-gradient(166deg, rgba(92, 178, 58, 0.80) 30.42%, rgba(4, 128, 2, 0.80) 116.94%)',
+            'url("/src/assets/images/image-38.png"), linear-gradient(166deg, rgba(92, 178, 58, 0.80) 30.42%, rgba(4, 128, 2, 0.80) 116.94%)',
           backgroundSize: "contain",
           backgroundPosition: "right",
           backgroundRepeat: "no-repeat",
