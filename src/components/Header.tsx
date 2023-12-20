@@ -100,7 +100,7 @@ const Header = ({
           animate={isIndividual ? "open" : "closed"}
           variants={variants}
           transition={{ duration: 1 }}
-          src={groupPicsImg} alt="people" className="w-3/4 md:w-full" />
+          src={groupPicsImg} alt="people" className="w-3/4 md:w-auto" />
       </motion.div>
     </div>
   )
