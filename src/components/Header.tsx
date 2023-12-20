@@ -68,7 +68,7 @@ const Header = ({
             variants={headerTextVariant}
             transition={{ duration: 1 }}
             className="grid gap-7 relative z-50">
-            <h2 className={`${isIndividual ? 'w-full md:w-[543px]' : "w-['68%'] text-center"} text-lg md:text-5xl font-semibold leading-[24px] md:leading-[64px]`}>{headerText}</h2>
+            <h2 className={`${isIndividual ? 'w-full md:w-[543px]' : "w-full md:w-['68%'] text-center"} text-lg md:text-5xl font-semibold leading-[24px] md:leading-[64px]`}>{headerText}</h2>
             <p className={`${isIndividual ? "" : "text-center z-50 w-[70%] mx-auto"}`}>{headerSubText}</p>
             <div className={`${isIndividual ? "" : "w-full text-center"}`}>
               <button
